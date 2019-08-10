@@ -1,0 +1,36 @@
+.profile-pic {
+  position: relative;
+  width: 150px;
+  img {
+    width: 150px;
+    height: 150px !important;
+
+    &:hover {
+      & + .overlay {
+        display: block;
+      }
+    }
+  }
+  .overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+
+    display: none;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.5s linear;
+    &:hover {
+      display: block;
+    }
+  }
+  i {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    color: white;
+    transition: all 0.5s linear;
+  }
+}

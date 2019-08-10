@@ -1,0 +1,111 @@
+@import "index";
+@import "signup";
+@import "users";
+@import "profile";
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+}
+
+.bg-custom {
+  background: #6c63ff;
+  color: white !important;
+}
+.btn.bg-custom {
+  background: #6c63ff;
+  color: white !important;
+  transition: all 0.4s ease;
+  &:hover {
+    color: #6c63ff !important;
+    border: 1px solid #6c63ff;
+    background-color: white;
+  }
+}
+
+.bg-custom-linear {
+  background: linear-gradient(90deg, #21d4fd, #b721ff);
+  border: none;
+  color: white;
+  &:hover {
+    color: white;
+    background: linear-gradient(90deg, #b721ff, #21d4fd);
+  }
+}
+
+.custom-btn {
+  padding: 10px 24px;
+  font-size: 1.1rem;
+}
+
+.small-img {
+  width: 50px !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+// nav
+
+.dropdown .dropdown-menu.dropdown-default .dropdown-item.active,
+.dropdown .dropdown-menu.dropdown-default .dropdown-item:active,
+.dropdown .dropdown-menu.dropdown-default .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-default .dropdown-item.active,
+.dropleft .dropdown-menu.dropdown-default .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-default .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-default .dropdown-item.active,
+.dropright .dropdown-menu.dropdown-default .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-default .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-default .dropdown-item.active,
+.dropup .dropdown-menu.dropdown-default .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-default .dropdown-item:hover {
+  color: white !important;
+  background-color: #6c63ff !important;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 0.125rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #b721ff, #21d4fd);
+  border-radius: 10px;
+}
+
+.select-none {
+  user-select: none !important;
+}
+
+.rounded-btn {
+  border-radius: 100px !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.group-input {
+  position: relative;
+  .upload-image {
+    position: absolute;
+    top: 6px;
+    right: 7px;
+  }
+}
+
+.custom-height {
+  height: 350px !important;
+}
+
+.avatar-width {
+  width: 50px !important;
+  height: 50px !important;
+}
